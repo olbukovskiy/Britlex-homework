@@ -1,0 +1,234 @@
+:root {
+  --main-font: "Poppins";
+  --main-font-weight: 400;
+  --secondary-font-weight: 500;
+  --semi-bold-weight: 600;
+  --background-color: #f5f5f5;
+  --main-text-color: #8f95a5;
+  --secondary-text-color: #263238;
+  --heading-color: #000000;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--main-font-weight);
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--main-text-color);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  width: 1338px;
+  /* 1338 */
+  outline: 1px solid tomato;
+}
+
+/* Logotype */
+.logo-first-part,
+.logo-second-part {
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  color: var(--heading-color);
+}
+
+.logo-second-part {
+  color: #939393;
+}
+
+/* Header */
+.list-item {
+  font-weight: var(--secondary-font-weight);
+  color: var(--secondary-text-color);
+}
+
+.header-button {
+  display: inline-block;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--heading-color);
+  cursor: pointer;
+  border: 2px solid #263238;
+  border-radius: 10px;
+  padding: 20px 56px;
+  width: 312px;
+  background-color: #ffffff;
+  margin-left: auto;
+}
+
+.header-button:hover,
+.header-button:focus {
+  background-color: var(--secondary-text-color);
+  color: #ffffff;
+}
+
+.header-list-flex {
+  display: flex;
+  margin-left: 228px;
+}
+
+.header-list-flex > li:not(:first-child) {
+  margin-left: 50px;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/* Hero section */
+.hero-heading {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+  color: var(--heading-color);
+  margin-bottom: 40px;
+}
+
+.hero-description {
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+
+.hero-button {
+  display: inline-block;
+  font-size: 36px;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  background: var(--secondary-text-color);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 426px;
+  padding: 23px 64px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--heading-color);
+}
+
+.hero-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.hero-main-cont {
+width: 530px;
+}
+
+/* Skills section */
+
+.skills-list-item {
+  background: var(--background-color);
+  border-radius: 10px;
+}
+.heading {
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--heading-color);
+}
+
+.list-item-heading {
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--secondary-text-color);
+}
+
+.skills-description {
+  font-size: 16px;
+}
+
+.skills-button {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #263238;
+  border-radius: 10px;
+  padding: 16px 64px;
+}
+
+.skills-button-secondary {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #263238;
+  border-radius: 10px;
+  padding: 15px 51px;
+}
+
+.skills-button:hover,
+.skills-button:focus,
+.skills-button-secondary:hover,
+.skills-button-secondary:focus {
+  background-color: var(--heading-color);
+}
+
+/* about section */
+.about-description {
+  line-height: 1.8;
+}
+
+.about-list-item {
+  font-weight: 600;
+  font-size: 48px;
+  color: #2a3246;
+}
+
+/* Pricing section */
+.pricing-list-heading {
+  line-height: 1.6;
+}
+
+.pricing-list-item {
+  font-size: 24px;
+  color: var(--secondary-text-color);
+}
+
+.pricing-per-month {
+  font-size: 18px;
+  color: #546269;
+}
+
+/* Footer section */
+
+.footer-list-item {
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+.footer {
+  border-top: 1px solid #C4C4C4;
+}
