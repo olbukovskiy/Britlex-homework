@@ -20,10 +20,10 @@
   </head>
   <body>
     <!-- Header section -->
-    <header>
+    <header class="header-section">
       <div class="container flex-container">
         <nav class="nav-flex">
-          <a class="link" href=""
+          <a class="link logo-link" href=""
             ><span class="logo-first-part">Brit</span
             ><span class="logo-second-part">lex</span></a
           >
@@ -62,11 +62,11 @@
           />
         </div>
       </section>
-      <section id="skills">
+      <section id="skills" class="section">
         <div class="container">
-          <h2 class="heading">Skills</h2>
-          <ul class="list">
-            <li class="skills-list-item">
+          <h2 class="heading skills-heading">Skills</h2>
+          <ul class="list main-skills-list">
+            <li class="skills-list-item speaking-item">
               <img
                 src="./media/Shared-goals-bro1.png"
                 alt="shared goals bro"
@@ -86,77 +86,97 @@
               </p>
               <a class="link skills-button" href="">Learn more</a>
             </li>
-            <li class="skills-list-item">
-              <img
-                src="./media/Typewriter-bro1.png"
-                alt="type writer"
-                width="390"
-                height="264"
-              />
-              <h3 class="list-item-heading">Writing</h3>
-              <p class="skills-description">
-                One of the most important and extensive areas of natural
-                science, the science that studies substances, also their
-                composition
-              </p>
-              <a class="link skills-button-secondary" href="">Learn more</a>
-            </li>
-            <li class="skills-list-item">
-              <img
-                src="./media/Housebookshelves-bro1.png"
-                alt="book shelves"
-                width="390"
-                height="264"
-              />
-              <h3 class="list-item-heading">Reading</h3>
-              <p class="skills-description">
-                Perception and response actions of the user resulting from the
-                use and/or upcoming use of the product, system or service
-              </p>
-              <a class="link skills-button-secondary" href="">Learn more</a>
-            </li>
-            <li class="skills-list-item">
-              <h3 class="list-item-heading">Listening</h3>
-              <p class="skills-description">
-                Here you can find activities to practise your listening skills.
-                Listening will help you to improve your understanding
-              </p>
-              <a class="link skills-button-secondary" href="">Learn more</a>
-              <img
-                src="./media/Podcastaudience-bro1.png"
-                alt="Podcast"
-                width="408"
-                height="274"
-              />
+            <li>
+              <ul class="list skills-box-list">
+                <li>
+                  <ul class="list writing-reading-list">
+                    <li class="skills-list-item">
+                      <img
+                        src="./media/Typewriter-bro1.png"
+                        alt="type writer"
+                        width="390"
+                        height="264"
+                      />
+                      <h3 class="list-item-heading">Writing</h3>
+                      <p class="skills-description">
+                        One of the most important and extensive areas of natural
+                        science, the science that studies substances, also their
+                        composition
+                      </p>
+                      <a class="link skills-button-secondary" href=""
+                        >Learn more</a
+                      >
+                    </li>
+                    <li class="skills-list-item">
+                      <img
+                        src="./media/Housebookshelves-bro1.png"
+                        alt="book shelves"
+                        width="390"
+                        height="264"
+                      />
+                      <h3 class="list-item-heading">Reading</h3>
+                      <p class="skills-description">
+                        Perception and response actions of the user resulting
+                        from the use and/or upcoming use of the product, system
+                        or service
+                      </p>
+                      <a class="link skills-button-secondary" href=""
+                        >Learn more</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="skills-list-item skills-item-listening">
+                  <div class="skills-thumb">
+                    <h3 class="list-item-heading">Listening</h3>
+                    <p class="skills-description">
+                      Here you can find activities to practise your listening
+                      skills. Listening will help you to improve your
+                      understanding
+                    </p>
+                    <a class="link skills-button-secondary" href=""
+                      >Learn more</a
+                    >
+                  </div>
+                  <img
+                    src="./media/Podcastaudience-bro1.png"
+                    alt="Podcast"
+                    width="408"
+                    height="274"
+                  />
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
       </section>
-      <section id="about-us">
-        <div class="container">
-          <h2 class="heading">About Us</h2>
-          <p class="about-description">
-            The model offers a framework for discussing problems related to the
-            user's experience, as well as possible ways and means of solving
-            them. Application development begins at the top level (strategy),
-            where the future software product is described quite abstractly from
-            the point of view of the expectations of both users and the
-            customer.
-          </p>
-          <ul class="list">
-            <li>
-              <p class="about-list-item">800</p>
-              <p>Pupils</p>
-            </li>
-            <li>
-              <p class="about-list-item">18</p>
-              <p>Teachers</p>
-            </li>
-            <li>
-              <p class="about-list-item">6</p>
-              <p>Foreign languages</p>
-            </li>
-          </ul>
+      <section id="about-us" class="section">
+        <div class="container about-us-section">
+          <div class="about-desc-division">
+            <h2 class="heading">About Us</h2>
+            <p class="about-description">
+              The model offers a framework for discussing problems related to
+              the user's experience, as well as possible ways and means of
+              solving them. Application development begins at the top level
+              (strategy), where the future software product is described quite
+              abstractly from the point of view of the expectations of both
+              users and the customer.
+            </p>
+            <ul class="list results-list">
+              <li class="results-item">
+                <p class="about-list-item">800</p>
+                <p>Pupils</p>
+              </li>
+              <li class="results-item">
+                <p class="about-list-item">18</p>
+                <p>Teachers</p>
+              </li>
+              <li class="results-item">
+                <p class="about-list-item">6</p>
+                <p>Foreign languages</p>
+              </li>
+            </ul>
+          </div>
           <img
             src="./media/Businesscompetition-bro1.png"
             alt="Business competition"
@@ -165,12 +185,13 @@
           />
         </div>
       </section>
-      <section id="pricing">
+      <section id="pricing" class="section">
         <div class="container">
-          <h2 class="heading">Pricing</h2>
-          <ul class="list">
-            <li>
+          <h2 class="heading skills-heading">Pricing</h2>
+          <ul class="list pricing-list">
+            <li class="pricing-list-item">
               <img
+                class="pricing-picture"
                 src="./media/online.png"
                 alt="Online lesson"
                 width="426"
@@ -183,13 +204,14 @@
                 Start learning English online in live classes with qualified EC
                 teachers and students from all over the world.
               </p>
-              <div>
-                <p class="pricing-list-item">&#163;5.99</p>
+              <div class="price self-study-price">
+                <p class="price-item">&#163;5.99</p>
                 <p class="pricing-per-month">per month</p>
               </div>
             </li>
-            <li>
+            <li class="pricing-list-item">
               <img
+                class="pricing-picture"
                 src="./media/lesson.png"
                 alt="Lesson-with-good-friends"
                 width="426"
@@ -201,13 +223,14 @@
               <p>
                 Interactive group classes with expert teachers. Free 7-day trial
               </p>
-              <div>
-                <p class="pricing-list-item">&#163;12.99</p>
+              <div class="price live-and-personal">
+                <p class="price-item">&#163;12.99</p>
                 <p class="pricing-per-month">per month</p>
               </div>
             </li>
-            <li>
+            <li class="pricing-list-item">
               <img
+                class="pricing-picture"
                 src="./media/webinar.png"
                 alt="Webinar lady"
                 width="426"
@@ -220,42 +243,59 @@
                 Online one-to-one English tutoring – enjoy our first session for
                 only &#36;1
               </p>
-              <div>
-                <p class="pricing-list-item">&#163;12.99</p>
+              <div class="price live-and-personal">
+                <p class="price-item">&#163;12.99</p>
                 <p class="pricing-per-month">per month</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section id="contact-us">
-        <div class="container">
+      <section id="contact-us" class="section contact-section">
+        <div class="container contact-us-thumb">
           <img
             src="./media/contact.png"
             alt="Contact us"
             width="425"
             height="430"
           />
-          <h2 class="heading">Contact Us</h2>
-          <p>
-            Discover your current English level by taking our free online
-            English test. Sign up to our newsletter for learning tips and free
-            resources
-          </p>
+          <div class="contact-data">
+            <h2 class="heading">Contact Us</h2>
+            <p class="contact-us-description">
+              Discover your current English level by taking our free online
+              English test. Sign up to our newsletter for learning tips and free
+              resources
+            </p>
+            <form>
+              <label>
+                <input
+                  class="form"
+                  type="email"
+                  name="email"
+                  placeholder="Enter Your E-mail"
+                />
+              </label>
+              <button class="subscribe-button" type="submit">Subscribe</button>
+            </form>
+          </div>
         </div>
       </section>
       <footer class="footer">
-        <div class="container">
-          <a class="link" href="./index.html"
+        <div class="container footer-thumb">
+          <a class="link logo-footer" href="./index.html"
             ><span class="logo-first-part">Brit</span
             ><span class="logo-second-part">lex</span></a
           >
-          <ul class="list">
-            <li>
-              <a class="link footer-list-item" href="">Terms and Conditions</a>
+          <ul class="list footer-list">
+            <li class="footer-list-item">
+              <a class="link footer-list-link" href="">Terms and Conditions</a>
             </li>
-            <li><a class="link footer-list-item" href="">Privacy Policy</a></li>
-            <li><a class="link footer-list-item" href="">Cookie Policy</a></li>
+            <li class="footer-list-item">
+              <a class="link footer-list-link" href="">Privacy Policy</a>
+            </li>
+            <li class="footer-list-item">
+              <a class="link footer-list-link" href="">Cookie Policy</a>
+            </li>
           </ul>
         </div>
       </footer>
