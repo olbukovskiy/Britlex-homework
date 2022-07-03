@@ -47,8 +47,9 @@ body {
   /* outline: 1px solid tomato; */
 }
 
+
 .section {
-padding-top: 180px;
+  padding-top: 180px;
 }
 
 /* Logotype */
@@ -126,11 +127,29 @@ padding-top: 180px;
 
 /* Hero section */
 .hero-heading {
+  position: relative;
+
+  width: 386px;
   font-weight: 600;
   font-size: 64px;
   line-height: 1.25;
   color: var(--heading-color);
   margin-bottom: 40px;
+}
+
+.hero-heading::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: 92px;
+  left: 420px;
+
+  background-size: 85px;
+  width: 85px;
+  height: 85px;
+  /* background-color: tomato; */
+  background-image: url(../media/bulb-icon.svg);
 }
 
 .hero-description {
@@ -163,7 +182,7 @@ padding-top: 180px;
 }
 
 .hero-main-cont {
-width: 530px;
+  width: 530px;
 }
 
 /* Skills section */
@@ -195,7 +214,25 @@ width: 530px;
 .skills-description {
   font-size: 16px;
   margin-bottom: 30px;
-  width: 350px;
+  width: 359px;
+}
+
+.skills-description-listening {
+  font-size: 16px;
+  margin-bottom: 30px;
+  width: 324px;
+}
+
+.skills-description-speaking {
+  font-size: 16px;
+  margin-bottom: 30px;
+  width: 347px;
+}
+
+.skills-description-speaking-sp {
+  font-size: 16px;
+  margin-bottom: 30px;
+  width: 310px;
 }
 
 .skills-button {
@@ -223,8 +260,7 @@ width: 530px;
 .skills-button-secondary:hover,
 .skills-button-secondary:focus,
 .subscribe-button:hover,
-.subscribe-button:focus
- {
+.subscribe-button:focus {
   background-color: var(--heading-color);
 }
 
@@ -251,10 +287,10 @@ width: 530px;
   margin-right: 30px;
 }
 
-.writing-reading-list>.skills-list-item {
+.writing-reading-list > .skills-list-item {
   width: 426px;
   border-radius: 10px;
-  padding: 32px 18px;  
+  padding: 32px 18px;
 }
 
 .main-skills-list {
@@ -262,8 +298,8 @@ width: 530px;
 }
 
 .speaking-item {
-padding: 32px 18px;
-margin-right: 30px; 
+  padding: 32px 18px;
+  margin-right: 30px;
 }
 
 /* about section */
@@ -310,8 +346,7 @@ margin-right: 30px;
 }
 
 .pricing-list-item {
- 
-    width: 426px;
+  width: 426px;
 }
 
 .pricing-per-month {
@@ -325,7 +360,6 @@ margin-right: 30px;
   display: flex;
 }
 
-
 .pricing-list-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -333,7 +367,6 @@ margin-right: 30px;
 .pricing-picture {
   margin-bottom: 31px;
 }
-
 
 .price {
   display: inline-flex;
@@ -383,13 +416,13 @@ margin-right: 30px;
   display: inline-block;
   font-weight: 500;
   font-size: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: var(--secondary-text-color);
   border-radius: 10px;
   cursor: pointer;
 
   padding: 21.5px 104px;
-  margin-left: 30px;    
+  margin-left: 30px;
 }
 
 .form {
@@ -397,7 +430,7 @@ margin-right: 30px;
   font-size: 16px;
   line-height: 1.88;
   color: var(--main-text-color);
-  border: 1px solid #8F95A5;
+  border: 1px solid #8f95a5;
   border-radius: 10px;
 
   padding-left: 30px;
@@ -409,7 +442,6 @@ margin-right: 30px;
 .contact-section {
   padding-bottom: 55px;
 }
-
 
 /* Footer section */
 
@@ -426,7 +458,7 @@ margin-right: 30px;
 }
 
 .footer {
-  border-top: 1px solid #C4C4C4;
+  border-top: 1px solid #c4c4c4;
   padding-bottom: 55px;
 }
 
@@ -442,4 +474,11 @@ margin-right: 30px;
 
 .logo-footer {
   padding: 22px 0;
+}
+
+.bulb-icon {
+  position: absolute;
+  top: 92px;
+  left: 420px;
+  fill: var(--heading-color);
 }
