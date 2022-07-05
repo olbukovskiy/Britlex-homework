@@ -145,9 +145,10 @@ body {
   top: 92px;
   left: 420px;
 
-  background-size: 85px;
-  width: 85px;
-  height: 85px;
+  background-size: 120px;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
   /* background-color: tomato; */
   background-image: url(../media/bulb-icon.svg);
 }
