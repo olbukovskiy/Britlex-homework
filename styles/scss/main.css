@@ -50,7 +50,6 @@ body {
   /* outline: 1px solid tomato; */
 }
 
-
 .section {
   padding-top: 180px;
 }
@@ -73,7 +72,6 @@ body {
 }
 
 /* Header */
-
 .header-section {
   padding: 55px 0;
 }
@@ -136,7 +134,6 @@ body {
 /* Hero section */
 .hero-heading {
   position: relative;
-
   width: 386px;
   font-weight: 600;
   font-size: 64px;
@@ -148,11 +145,9 @@ body {
 .hero-heading::after {
   content: "";
   display: block;
-
   position: absolute;
   top: 92px;
   left: 420px;
-
   background-size: 120px;
   background-repeat: no-repeat;
   width: 120px;
@@ -195,7 +190,6 @@ body {
 }
 
 /* Skills section */
-
 .skills-list-item {
   background: var(--background-color);
   border-radius: 10px;
@@ -216,7 +210,6 @@ body {
   font-weight: 600;
   font-size: 30px;
   color: var(--secondary-text-color);
-
   margin-bottom: 20px;
 }
 
@@ -288,7 +281,6 @@ body {
 
 .writing-reading-list {
   display: flex;
-
   margin-bottom: 30px;
 }
 
@@ -312,7 +304,6 @@ body {
 }
 
 /* about section */
-
 .about-us-section {
   display: flex;
 }
@@ -360,7 +351,6 @@ body {
 
 .pricing-per-month {
   width: 108px;
-
   font-size: 18px;
   color: #546269;
 }
@@ -381,18 +371,15 @@ body {
   display: inline-flex;
   align-items: baseline;
   padding: 5px 23px 4px 29px;
-
   width: 260px;
   height: 45px;
   border-radius: 5px;
-
   background-color: #eeeeee;
 }
 
 .price > .price-item {
   width: 76px;
   margin-right: 28px;
-
   font-size: 24px;
   text-align: center;
   color: var(--secondary-text-color);
@@ -407,7 +394,6 @@ body {
 }
 
 /* Contact us */
-
 .contact-us-thumb {
   display: flex;
 }
@@ -429,7 +415,6 @@ body {
   background-color: var(--secondary-text-color);
   border-radius: 10px;
   cursor: pointer;
-
   padding: 21.5px 104px;
   margin-left: 30px;
 }
@@ -441,9 +426,7 @@ body {
   color: var(--main-text-color);
   border: 1px solid #8f95a5;
   border-radius: 10px;
-
   padding-left: 30px;
-
   width: 420px;
   height: 70px;
 }
@@ -453,12 +436,10 @@ body {
 }
 
 /* Footer section */
-
 .footer-list-link {
   font-size: 24px;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
-
   padding: 31px 0;
 }
 
@@ -490,4 +471,4 @@ body {
   top: 92px;
   left: 420px;
   fill: var(--heading-color);
-}
+}/*# sourceMappingURL=main.css.map */

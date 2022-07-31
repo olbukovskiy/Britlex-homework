@@ -16,7 +16,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Header section -->
@@ -57,12 +57,53 @@
             </p>
             <button class="hero-button" type="button">Get started</button>
           </div>
-          <img
-            src="./media/learning-languages.png"
-            alt="learning languages"
-            width="654"
-            height="510"
-          />
+          <div>
+            <picture>
+              <source
+                srcset="
+                  ./media/desktop/learning-languages-654.png   654w,
+                  ./media/desktop/learning-languages-1308.png 1308w
+                "
+                sizes="(min-width: 1378px) 654px"
+                media="(min-width: 1378px)"
+                type="image/png"
+              />
+              <source
+                srcset="
+                  ./media/tablet/learning-languages-352.png 352w,
+                  ./media/tablet/learning-languages-704.png 704w
+                "
+                sizes="(min-width: 768px) 352px"
+                media="(min-width: 768px)"
+                type="image/png"
+              />
+
+              <source
+                srcset="
+                  ./media/large-phone/learning-languages-424.png 424w,
+                  ./media/large-phone/learning-languages-848.png 848w
+                "
+                sizes="(min-width: 575px) 424px"
+                media="(min-width: 575px)"
+                type="image/png"
+              />
+
+              <source
+                srcset="
+                  ./media/mini-phone/learning-languages-299.png 299w,
+                  ./media/mini-phone/learning-languages-598.png 598w
+                "
+                sizes="(min-width: 320px) 299px"
+                media="(min-width: 320px)"
+                type="image/png"
+              />
+
+              <img
+                src="./media/desktop/learning-languages-654.png"
+                alt="learning languages"
+              />
+            </picture>
+          </div>
         </div>
       </section>
       <section id="skills" class="section">
@@ -71,7 +112,11 @@
           <ul class="list main-skills-list">
             <li class="skills-list-item speaking-item">
               <img
-                src="./media/Shared-goals-bro1.png"
+                srcset="
+                  ./media/desktop/Shared-goals-bro1-390.png 1x,
+                  ./media/desktop/Shared-goals-bro1-780.png 2x
+                "
+                src="./media/desktop/Shared-goals-bro1-390.png"
                 alt="shared goals bro"
                 width="390"
                 height="390"
@@ -95,7 +140,11 @@
                   <ul class="list writing-reading-list">
                     <li class="skills-list-item">
                       <img
-                        src="./media/Typewriter-bro1.png"
+                        srcset="
+                          ./media/desktop/Typewriter-bro1-390.png 1x,
+                          ./media/desktop/Typewriter-bro1-780.png 2x
+                        "
+                        src="./media/desktop/Typewriter-bro1-390.png"
                         alt="type writer"
                         width="390"
                         height="264"
@@ -112,7 +161,11 @@
                     </li>
                     <li class="skills-list-item">
                       <img
-                        src="./media/Housebookshelves-bro1.png"
+                        srcset="
+                          ./media/desktop/Housebookshelves-bro1-390.png 1x,
+                          ./media/desktop/Housebookshelves-bro1-780.png 2x
+                        "
+                        src="./media/desktop/Housebookshelves-bro1-390.png"
                         alt="book shelves"
                         width="390"
                         height="264"
@@ -142,7 +195,11 @@
                     >
                   </div>
                   <img
-                    src="./media/Podcastaudience-bro1.png"
+                    srcset="
+                      ./media/desktop/Podcastaudience-bro1-408.png 1x,
+                      ./media/desktop/Podcastaudience-bro1-816.png 2x
+                    "
+                    src="./media/desktop/Podcastaudience-bro1-408.png"
                     alt="Podcast"
                     width="408"
                     height="274"
@@ -181,7 +238,11 @@
             </ul>
           </div>
           <img
-            src="./media/Businesscompetition-bro1.png"
+            srcset="
+              ./media/desktop/Businesscompetition-bro1-540.png  1x,
+              ./media/desktop/Businesscompetition-bro1-1080.png 2x
+            "
+            src="./media/desktop/Businesscompetition-bro1-540.png"
             alt="Business competition"
             width="540"
             height="540"
@@ -195,7 +256,11 @@
             <li class="pricing-list-item">
               <img
                 class="pricing-picture"
-                src="./media/online.png"
+                srcset="
+                  ./media/desktop/online-426.png 1x,
+                  ./media/desktop/online-852.png 2x
+                "
+                src="./media/desktop/online-426.png"
                 alt="Online lesson"
                 width="426"
                 height="320"
@@ -215,7 +280,11 @@
             <li class="pricing-list-item">
               <img
                 class="pricing-picture"
-                src="./media/lesson.png"
+                srcset="
+                  ./media/desktop/lesson-426.png 1x,
+                  ./media/desktop/lesson-852.png 2x
+                "
+                src="./media/desktop/lesson-426.png"
                 alt="Lesson-with-good-friends"
                 width="426"
                 height="320"
@@ -234,7 +303,11 @@
             <li class="pricing-list-item">
               <img
                 class="pricing-picture"
-                src="./media/webinar.png"
+                srcset="
+                  ./media/desktop/webinar-426.png 1x,
+                  ./media/desktop/webinar-852.png 2x
+                "
+                src="./media/desktop/webinar-426.png"
                 alt="Webinar lady"
                 width="426"
                 height="320"
@@ -257,7 +330,11 @@
       <section id="contact-us" class="section contact-section">
         <div class="container contact-us-thumb">
           <img
-            src="./media/contact.png"
+            srcset="
+              ./media/desktop/contact-425.png 1x,
+              ./media/desktop/contact-850.png 2x
+            "
+            src="./media/desktop/contact-425.png"
             alt="Contact us"
             width="425"
             height="430"
@@ -269,15 +346,32 @@
               English test. Sign up to our newsletter for learning tips and free
               resources
             </p>
-            <form>
-              <label>
+            <form class="footer-form">
+              <label class="form__label">
                 <input
                   class="form"
                   type="email"
                   name="email"
-                  placeholder="Enter Your E-mail"
+                  placeholder=" "
+                  required
                 />
+                <span class="form__text">Enter Your E-mail</span>
+                <svg class="form__icon" width="30" height="30">
+                  <use
+                    class="icon-attention"
+                    href="./media/icons.svg#icon-attention"
+                  ></use>
+                  <use
+                    class="icon-success"
+                    href="./media/icons.svg#icon-success"
+                  ></use>
+                </svg>
+                <span class="form__attention"
+                  >Неверный формат данных. Пример правильного формата данных:
+                  <span class="form-example">vasya&#64;mail.com</span></span
+                >
               </label>
+
               <button class="subscribe-button" type="submit">Subscribe</button>
             </form>
           </div>
