@@ -217,6 +217,7 @@ body {
 .skills-list-item {
   background: var(--background-color);
   border-radius: 10px;
+  padding: 32px 18px;
 }
 
 .heading {
@@ -235,6 +236,10 @@ body {
   font-size: 30px;
   color: var(--secondary-text-color);
   margin-bottom: 20px;
+}
+
+.list-item-heading--margin {
+  margin-top: 24px;
 }
 
 .skills-description {
@@ -294,54 +299,43 @@ body {
   background-color: var(--heading-color);
 }
 
-.skills-item-listening {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 882px;
-  height: 338px;
+@media screen and (min-width: 1378px) {
+  .main-skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 426px);
+    grid-template-rows: 579px 338px;
+    gap: 30px;
+  }
+  .speaking-item {
+    grid-row: 1/3;
+    grid-column: 1/2;
+  }
+  .writing-item {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .reading-item {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+  .skills-item-listening {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .skills-thumb {
+    width: 324px;
+    margin-right: 114px;
+  }
 }
-
-.skills-thumb {
-  padding-left: 18px;
-  width: 324px;
-  margin-right: 114px;
-}
-
-.writing-reading-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 30px;
-}
-
-.writing-reading-list > .skills-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.writing-reading-list > .skills-list-item {
-  width: 426px;
-  border-radius: 10px;
-  padding: 32px 18px;
-}
-
-.main-skills-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.speaking-item {
-  padding: 32px 18px;
-  margin-right: 30px;
-}
-
 /* about section */
 .about-us-section {
   display: -webkit-box;
@@ -552,6 +546,7 @@ body {
           transform: translateY(-50%);
   font-size: 16px;
   line-height: 1.88;
+  cursor: text;
   -webkit-transition: font-size 800ms cubic-bezier(0.4, 0, 0.2, 1), line-height 800ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: font-size 800ms cubic-bezier(0.4, 0, 0.2, 1), line-height 800ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 800ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 800ms cubic-bezier(0.4, 0, 0.2, 1), font-size 800ms cubic-bezier(0.4, 0, 0.2, 1), line-height 800ms cubic-bezier(0.4, 0, 0.2, 1);
