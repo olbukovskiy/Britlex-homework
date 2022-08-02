@@ -18,7 +18,7 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body>
+  <body data-open>
     <!-- Header section -->
     <header class="header-section">
       <div class="container flex-container">
@@ -27,18 +27,42 @@
             ><span class="logo-first-part">Brit</span
             ><span class="logo-second-part">lex</span></a
           >
-          <ul class="list header-list-flex">
-            <li>
+          <ul class="list header-list-flex" id="menu-container" data-menu>
+            <li class="list-one">
               <a class="link list-item" href="./index.html" title="Home"
                 >Home</a
               >
             </li>
-            <li><a class="link list-item" href="#skills">Skills</a></li>
-            <li><a class="link list-item" href="#about-us">About Us</a></li>
-            <li><a class="link list-item" href="#pricing">Pricing</a></li>
-            <li><a class="link list-item" href="#contact-us">Contacts</a></li>
+            <li class="list-one">
+              <a class="link list-item" href="#skills">Skills</a>
+            </li>
+            <li class="list-one">
+              <a class="link list-item" href="#about-us">About Us</a>
+            </li>
+            <li class="list-one">
+              <a class="link list-item" href="#pricing">Pricing</a>
+            </li>
+            <li class="list-one">
+              <a class="link list-item" href="#contact-us">Contacts</a>
+            </li>
           </ul>
         </nav>
+        <button
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40px"
+            height="40px"
+            class="menu-icons"
+            aria-label="Mobile menu changer"
+          >
+            <use class="menu-icon" href="./media/icons.svg#menu_mobile"></use>
+            <use class="close-icon" href="./media/icons.svg#close_mobile"></use>
+          </svg>
+        </button>
         <button class="header-button" type="button">Let&#39;s Talk</button>
       </div>
     </header>
@@ -47,17 +71,14 @@
       <section class="hero">
         <div class="container hero-flex">
           <div class="hero-main-cont">
-            <h1 class="hero-heading">
-              Learn <br />
-              Any Foreign Language
-            </h1>
+            <h1 class="hero-heading">Learn Any Foreign Language</h1>
             <p class="hero-description">
               With our teachers who write a program for each student, you will
               be able to make your first sketch after the first lesson.
             </p>
             <button class="hero-button" type="button">Get started</button>
           </div>
-          <div>
+          <div class="hero__thumb">
             <picture>
               <source
                 srcset="
@@ -690,5 +711,6 @@
         </div>
       </footer>
     </main>
+    <script src="./menu.js"></script>
   </body>
 </html>
