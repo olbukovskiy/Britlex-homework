@@ -29,7 +29,7 @@ ol {
 
 img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -52,6 +52,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   min-width: 320px;
+  max-width: 320px;
   padding: 0 15px;
   outline: solid 2px tomato;
 
@@ -478,7 +479,7 @@ body {
 }
 
 .hero-main-cont {
-  @media screen and (min-width: 575px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
 
@@ -509,17 +510,31 @@ body {
 .heading {
   font-weight: 600;
   font-size: 24px;
-  line-height: 3.33;
+  line-height: 1.5;
   color: var(--heading-color);
-  margin-bottom: 60px;
+  margin-bottom: 56px;
 
   @media screen and (min-width: 575px) {
     font-size: 30px;
-    line-height: 2.67;
+    margin-bottom: 63px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 66px;
   }
 
   @media screen and (min-width: 1378px) {
-    font-size: 48px;
+    font-size: 60px;
+  }
+}
+
+.heading__about {
+  @media screen and (min-width: 768px) and (max-width: 1377px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    margin-bottom: 45px;
   }
 }
 
@@ -707,8 +722,6 @@ body {
       margin-bottom: 21px;
     }
   }
-
-
 }
 
 @media screen and (min-width: 575px) and (max-width: 767px) {
@@ -740,8 +753,8 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1377px) {
   .main-skills-list {
     display: grid;
-    grid-template-columns: repeat(3, 226px);
-    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 224px 227px 228px;
+    grid-template-rows: 0.68fr 0.32fr;
     gap: 10px;
     grid-auto-flow: row;
   }
@@ -784,6 +797,10 @@ body {
   .reading-pic {
     margin-top: 34px;
     margin-bottom: 31px;
+  }
+
+  .skills-button-secondary {
+    margin-bottom: 15px;
   }
 }
 
@@ -829,43 +846,84 @@ body {
   }
 }
 
-// .skills-item-listening {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 882px;
-//   height: 338px;
-// }
+@media screen and (max-width: 1377px) {
+  .skills-list-item picture {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-// .writing-reading-list {
-//   display: flex;
-
-//   margin-bottom: 30px;
-// }
-
-// .writing-reading-list > .skills-list-item:not(:last-child) {
-//   margin-right: 30px;
-// }
-
-// .writing-reading-list > .skills-list-item {
-//   width: 426px;
-//   border-radius: 10px;
-//   padding: 32px 18px;
-// }
-
-// .main-skills-list {
-//   display: flex;
-// }
-
-// .speaking-item {
-//   padding: 32px 18px;
-//   margin-right: 30px;
-// }
+  .skills-list-item img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 /* about section */
 
 .about-us-section {
-  display: flex;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-section {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 321px 295px;
+    column-gap: 78px;
+    grid-template-rows: 80px auto auto;
+  }
+
+  .heading-about {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .about-description {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .results-list {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .about-pic {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
+}
+
+@media screen and (min-width: 1378px) {
+  .about-us-section {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 652px 540px;
+    column-gap: 146px;
+    grid-template-rows: 132px auto auto;
+  }
+
+  .heading-about {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .about-description {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .results-list {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .about-pic {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
 }
 
 .about-desc-division {
@@ -873,29 +931,122 @@ body {
 }
 
 .about-description {
-  line-height: 1.8;
-  width: 652px;
-  padding-bottom: 30px;
+  @media screen and (max-width: 574px) {
+    line-height: 1.54;
+    width: 100%;
+    max-width: 295px;
+    margin-bottom: 43px;
+    font-size: 13px;
+  }
+
+  @media screen and (min-width: 575px) and (max-width: 767px) {
+    line-height: 1.5;
+    width: 510px;
+    margin-bottom: 53px;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.5;
+    width: 321px;
+    margin-bottom: 41px;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    line-height: 1.8;
+    width: 652px;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
 }
 
 .about-list-item {
   font-weight: 600;
-  font-size: 48px;
   color: #2a3246;
+  margin-bottom: 5px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    font-size: 48px;
+    margin-bottom: 6px;
+  }
+}
+
+.about__text {
+  font-size: 15px;
+
+  @media screen and (min-width: 575px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    font-size: 20px;
+  }
 }
 
 .results-list {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+
+  @media screen and (min-width: 575px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 575px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1378px) {
+    justify-content: center;
+  }
 }
 
 .results-item {
   text-align: center;
-  width: 108px;
+
+  @media screen and (max-width: 574px) {
+    &:not(:last-child) {
+      margin-bottom: 52px;
+    }
+  }
+
+  @media screen and (min-width: 1378px) {
+    width: 108px;
+  }
+}
+
+.about-us-section img {
+  @media screen and (max-width: 574px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 23px;
+  }
+
+  @media screen and (min-width: 575px) and (max-width: 767px) {
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .results-item:not(:last-child) {
-  margin-right: 131px;
+  @media screen and (min-width: 1378px) {
+    margin-right: 131px;
+  }
 }
 
 /* Pricing section */
