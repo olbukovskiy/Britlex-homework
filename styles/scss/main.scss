@@ -29,8 +29,12 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+
+  @media screen and (max-width: 574px) {
+    margin: 0 auto;
+  }
 }
 
 body {
@@ -1051,28 +1055,97 @@ body {
 
 /* Pricing section */
 .pricing-list-heading {
+  flex-grow: 1;
   line-height: 1.6;
-  font-size: 30px;
   color: var(--secondary-text-color);
+  font-size: 18px;
+  margin-top: 28px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 575px) {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 21px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    margin-top: 23px;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.pricing__text {
+  font-size: 13px;
+
+  @media screen and (min-width: 575px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    font-size: 20px;
+  }
 }
 
 .pricing-list-item {
-  width: 426px;
+  @media screen and (max-width: 574px) {
+    margin-bottom: 63px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 282px;
+    text-align: center;
+    margin-bottom: 71px;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 72px) / 3);
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1378px) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .pricing-per-month {
-  width: 108px;
-
-  font-size: 18px;
   color: #546269;
+  font-size: 14px;
+
+  @media screen and (min-width: 575px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    width: 108px;
+
+    font-size: 18px;
+  }
 }
 
 .pricing-list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .pricing-list-item:not(:last-child) {
-  margin-right: 30px;
+  @media screen and (min-width: 768px) {
+    margin-right: 36px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    margin-right: 30px;
+  }
 }
 
 .pricing-picture {
@@ -1082,30 +1155,107 @@ body {
 .price {
   display: inline-flex;
   align-items: baseline;
-  padding: 5px 23px 4px 29px;
-
-  width: 260px;
-  height: 45px;
+  justify-content: space-between;
+  width: 170px;
+  height: 37px;
+  padding: 5px 15px 5px 15px;
   border-radius: 5px;
 
   background-color: #eeeeee;
+
+  @media screen and (min-width: 575px) {
+    width: 205px;
+    height: 45px;
+    padding: 5px 12px 5px 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 205px;
+    padding: 6px 17px 6px 17px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    padding: 5px 23px 4px 29px;
+
+    width: 260px;
+  }
 }
 
 .price > .price-item {
-  width: 76px;
-  margin-right: 28px;
-
-  font-size: 24px;
   text-align: center;
   color: var(--secondary-text-color);
+  font-size: 18px;
+
+  @media screen and (min-width: 575px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    width: 76px;
+
+    font-size: 24px;
+  }
 }
 
 .self-study-price {
-  margin-top: 30px;
+  @media screen and (max-width: 574px) {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 575px) {
+    margin-top: 31px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 28px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    margin-top: 30px;
+  }
+}
+
+.price__wrapper {
+  position: relative;
+
+  @media screen and (min-width: 768px) {
+    height: 210px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    height: 320px;
+  }
+}
+
+.price__wrapper img {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    object-position: center;
+  }
 }
 
 .live-and-personal {
-  margin-top: 60px;
+  @media screen and (max-width: 574px) {
+    margin-top: 30px;
+  }
+
+  @media screen and (min-width: 575px) {
+    margin-top: 31px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 49px;
+  }
+
+  @media screen and (min-width: 1378px) {
+    margin-top: 60px;
+  }
 }
 
 /* Contact us */
