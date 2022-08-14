@@ -1975,14 +1975,46 @@ body {
 
 .about-modal__form {
   height: 30px;
-  margin-top: 5px;
   border: 1px solid #8f95a5;
   border-radius: 5px;
 
-  padding: 5px 15px;
+  padding: 5px 40px;
 
   @media screen and (min-width: 1378px) {
     height: 40px;
-    margin-top: 10px;
   }
+}
+
+.form__wrapper {
+  position: relative;
+  display: block;
+  color: #000000;
+  fill: #000000;
+}
+
+.form__check-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  fill: currentColor;
+}
+
+.start-icon {
+  opacity: 1;
+}
+
+.finish-icon {
+  opacity: 0;
+}
+
+.about-modal__form-text:focus:valid ~ .form__check-icon .finish-icon,
+.about-modal__form-text:valid:not(:placeholder-shown) ~ .form__check-icon .finish-icon {
+  opacity: 1;
+}
+
+.about-modal__form-text:focus:valid ~ .form__check-icon .start-icon,
+.about-modal__form-text:valid:not(:placeholder-shown) ~ .form__check-icon .start-icon {
+  opacity: 0;
 }
