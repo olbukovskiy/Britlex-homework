@@ -1458,6 +1458,26 @@ body {
   width: 100%;
 }
 
+.contact__heading--desktop {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.contact__heading--mobile {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
 /* Footer section */
 
 .footer-thumb {

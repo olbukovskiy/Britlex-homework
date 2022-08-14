@@ -1595,6 +1595,28 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .contact__heading--desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact__heading--desktop {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact__heading--mobile {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact__heading--mobile {
+    display: none;
+  }
+}
+
 /* Footer section */
 @media screen and (max-width: 574px) {
   .footer-thumb {
